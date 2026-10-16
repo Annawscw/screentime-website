@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-NZ" data-theme="dark"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Addiction buster</title>
+<meta name="description" content="Specific swaps, a focus timer, a seven-day challenge and a wind-down plan.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-dot"></span>Screen Addiction</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="The Quiz.html">The Quiz</a>
+      <a href="Reality Check.html">Reality Check</a>
+      <a href="Addiction buster.html" aria-current="page">Addiction buster</a>
+      <a href="The facts.html">The Facts</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to light theme">☾</button>
+  </div>
+</header>
+
+<main id="main">
+  <div id="toolkit">
+
+    <!-- ============================== INTRO ============================== -->
+    <section style="padding-bottom:var(--s4)">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="wrap load-in">
+        <p class="eyebrow">Addiction buster</p>
+        <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Things that actually work.</h1>
+        <p class="lede">
+          None of these are "use your phone less". They're specific, they take under five minutes to set up,
+          and most of them work by <strong>changing your setup rather than relying on willpower</strong> —
+          because willpower at 11:30pm is not a real thing.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== SWAP CARDS ============================== -->
+    <section style="padding-top:var(--s4)">
+      <div class="wrap">
+        <h2>Swap cards</h2>
+        <p class="lede" style="margin-bottom:2rem">Find the habit. Flip the card. Try the swap tonight.</p>
+
+        <div class="filters" id="filters" role="group" aria-label="Filter swap cards by category">
+          <button class="filter" type="button" data-cat="all" aria-pressed="true">All 12</button>
+          <button class="filter" type="button" data-cat="sleep" aria-pressed="false">Sleep</button>
+          <button class="filter" type="button" data-cat="focus" aria-pressed="false">Focus</button>
+          <button class="filter" type="button" data-cat="social" aria-pressed="false">Social</button>
+          <button class="filter" type="button" data-cat="boredom" aria-pressed="false">Boredom</button>
+        </div>
+
+        <div class="grid grid-3" id="swap-cards"><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I scroll in bed until I fall asleep</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Charge your phone across the room, or outside it. Buy a $15 alarm clock so "I need it as my alarm" stops being true. The barrier has to be physical — willpower at 11pm does not exist.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I check my phone the second I wake up</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Put a book, a glass of water or your school bag where your phone used to be. The first thing your hand finds sets the tone for the whole morning.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I say "one more video" and lose an hour</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn off autoplay (YouTube: Settings → Autoplay off). Every "one more" you have to actually choose is one you can say no to.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I cannot get started on homework</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Phone in another room — not face-down on the desk. Studies keep finding that a visible phone eats attention even when it is silent. Then use the 25-minute timer on this page.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I check my phone every few minutes while studying</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Batch it. Work 25, check for 5. Knowing a check is coming stops the itch far better than "never".</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">Notifications keep pulling me out</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn off every notification that is not a real human messaging you directly. No app, no game, no "someone you may know". Do it once and you get hours back.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I feel worse after scrolling but keep doing it</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Spend ten minutes unfollowing. Not muting — unfollowing. If an account reliably makes you feel behind, it is not neutral content, it is a cost you are paying daily.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I keep streaks going out of obligation</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Streaks are a design trick, not a friendship. Tell the person you are dropping it. If the friendship is real it survives; if it is not, you just got your evenings back.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I am on my phone when I am with people</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Phone-stack: everyone puts their phone in the middle of the table, first to grab it buys the chips. Works because it is a game, not a rule.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I go on my phone the moment I am bored</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Sit in the boredom for two minutes first. It is deeply uncomfortable and then it passes, and something else turns up. This is the single hardest and most useful thing on this page.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I open apps without deciding to</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Move your three worst apps off the home screen into a folder on the last page. Your thumb has muscle memory — break the map and you break the reflex.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">Removing apps just leaves an empty hole</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Decide in advance what fills the gap. An empty hour gets filled by the phone by default. A planned hour does not. Have the book, the ball or the mate lined up first.</span><span class="flip-hint">← Tap to flip back</span></span></span></button></div>
+      </div>
+    </section>
+
+    <!-- ============================== FOCUS TIMER ============================== -->
+    <section>
+      <div class="wrap">
+        <div class="grid grid-2" style="align-items:center">
+          <div>
+            <p class="eyebrow">Focus timer</p>
+            <h2>25 on, 5 off.</h2>
+            <p style="color:var(--muted)">
+              Put your phone in another room — not face-down on the desk, actually out of the room.
+              Work for 25 minutes, then take 5. Knowing a break is coming is what stops the itch;
+              "never check it" has never worked for anyone.
+            </p>
+            <div class="btn-row" style="margin-top:1.5rem">
+              <button class="btn btn-primary" type="button" id="btn-timer-start">▶ Start</button>
+              <button class="btn btn-ghost" type="button" id="btn-timer-reset">Reset</button>
+            </div>
+            <p style="margin-top:1.2rem;color:var(--muted);font-size:.92rem">
+              Sessions finished today: <strong id="sessions-today" style="color:var(--mint)">0</strong>
+            </p>
+          </div>
+
+          <div class="timer-wrap">
+            <svg class="timer-ring" width="210" height="210" viewBox="0 0 210 210" aria-hidden="true">
+              <circle class="timer-track" cx="105" cy="105" r="88" fill="none" stroke-width="12"></circle>
+              <circle class="timer-fill" id="timer-fill" cx="105" cy="105" r="88" fill="none" stroke-width="12" stroke-dashoffset="0" stroke-dasharray="552.9203070318035" stroke="var(--mint)" style="stroke-dashoffset: 0px;"></circle>
+            </svg>
+            <div class="timer-text" id="timer-time" role="timer" aria-live="off">25:00<small id="timer-mode">Focus</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CHALLENGE ============================== -->
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">The seven-day challenge</p>
+        <h2>One small thing a day.</h2>
+        <p class="lede" style="margin-bottom:2rem">
+          Do them in order or don't. They don't have to be consecutive days. Your progress saves automatically.
+        </p>
+
+        <div class="grid grid-2" style="align-items:start">
+          <div id="challenge"><button class="day-row" type="button" aria-pressed="false" data-i="0"><span class="day-box" aria-hidden="true"></span><span><strong>Day 1 — First 30 minutes</strong><span>No phone for the first 30 minutes after you wake up. Just today.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="1"><span class="day-box" aria-hidden="true"></span><span><strong>Day 2 — Kill the noise</strong><span>Turn off every notification that is not a person messaging you directly.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="2"><span class="day-box" aria-hidden="true"></span><span><strong>Day 3 — Move the charger</strong><span>Charge your phone outside your bedroom tonight. This is the big one.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="3"><span class="day-box" aria-hidden="true"></span><span><strong>Day 4 — One meal, no phone</strong><span>Eat one meal today with your phone in another room. Notice how long it feels.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="4"><span class="day-box" aria-hidden="true"></span><span><strong>Day 5 — Rearrange</strong><span>Move your three most-used apps off the home screen into a folder on the last page.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="5"><span class="day-box" aria-hidden="true"></span><span><strong>Day 6 — Two hours out</strong><span>Two hours away from home with your phone left behind, or on aeroplane mode.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="6"><span class="day-box" aria-hidden="true"></span><span><strong>Day 7 — Check the number</strong><span>Look at your real screen time for the week in your phone settings. Log it. No judgement — just look.</span></span></button></div>
+          <div class="card card-hard">
+            <h3>Why this works</h3>
+            <p style="color:var(--muted)">
+              Big resolutions fail because they need you to be a different person by Monday.
+              Each of these takes under ten minutes and changes one part of your environment.
+              Environment beats intention — every time.
+            </p>
+            <p id="challenge-note" style="margin:0;color:var(--muted)">0 of 7 done. They do not have to be on consecutive days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== WIND-DOWN ============================== -->
+    <section>
+      <div class="wrap">
+        <div class="grid grid-2" style="align-items:start">
+          <div>
+            <p class="eyebrow">Wind-down builder</p>
+            <h2>Work backwards from bed.</h2>
+            <p style="color:var(--muted)">
+              The blue-light thing is the small problem. The real one is that scrolling keeps your brain
+              switched on and quietly pushes your bedtime later and later. Set your target bedtime and
+              this builds the ninety minutes before it.
+            </p>
+            <label for="bedtime" style="display:block;margin-top:1.5rem;margin-bottom:.5rem;font-weight:600">
+              What time do you want to be asleep?
+            </label>
+            <input type="time" id="bedtime" value="22:30">
+            <p style="margin-top:1.5rem;font-size:.86rem;color:var(--muted)">
+              Tip: print this page and stick the timeline on your wall. It works better on paper than on a screen —
+              which is sort of the whole point.
+            </p>
+          </div>
+
+          <div class="card card-hard">
+            <h3 style="margin-bottom:0">Tonight's plan</h3>
+            <ul class="timeline" id="timeline"><li><time>9:00pm</time><span><strong>Last scroll</strong><br><span style="color:var(--muted);font-size:.94rem">Say what you are doing to whoever you are talking to, then put it down. Ending on your own terms is the whole point.</span></span></li><li><time>9:30pm</time><span><strong>Phone goes out</strong><br><span style="color:var(--muted);font-size:.94rem">Onto its charger, outside the bedroom. This one step does more than every other step combined.</span></span></li><li><time>9:45pm</time><span><strong>Something analogue</strong><br><span style="color:var(--muted);font-size:.94rem">Shower, food, tidy, guitar, stretch, chat. Anything where your hands are busy and nothing is scrolling.</span></span></li><li><time>10:05pm</time><span><strong>Tomorrow, on paper</strong><br><span style="color:var(--muted);font-size:.94rem">Write down the three things you have to do tomorrow. Half of lying awake is your brain refusing to let go of a list.</span></span></li><li><time>10:15pm</time><span><strong>Read something</strong><br><span style="color:var(--muted);font-size:.94rem">Paper if you have it. Ten pages is plenty — it is about the transition, not the reading.</span></span></li><li><time>10:30pm</time><span><strong>Lights out</strong><br><span style="color:var(--muted);font-size:.94rem">Actual bedtime. If you are still awake in 20 minutes, that is normal. Do not go and get the phone.</span></span></li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="margin-top:0;border-top:0">
+      Whakatā · a student project for NCEA Level 3 Digital Technologies ·
+      <a href="learn.html#sources">Sources</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="data/toolkit-data.js"></script>
+<script src="js/toolkit.js"></script>
+
+
+</body></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toolkit — Whakatā</title>
+<meta name="description" content="Specific swaps, a focus timer, a seven-day challenge and a wind-down plan.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-dot"></span>whakatā</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="check.html">The Check</a>
+      <a href="dashboard.html">My Balance</a>
+      <a href="toolkit.html" aria-current="page">Toolkit</a>
+      <a href="learn.html">The Facts</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to light theme">☾</button>
+  </div>
+</header>
+
+<main id="main">
+  <div id="toolkit">
+
+  
+<script src="js/app.js"></script>
+<script src="data/toolkit-data.js"></script>
+<script src="js/toolkit.js"></script>
+
+
+</body></html>
