@@ -49,31 +49,29 @@
         <!-- ---------- the quiz itself ---------- -->
         <div id="quiz-active">
           <div class="progress">
-            <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
+            <div class="progress-bar" id="progress-bar"></div>
           </div>
           <div class="progress-meta">
             <span id="q-count">Question 1 of 10</span>
-            <span class="q-dim" id="q-dim">Loss of control</span>
+            <span class="q-dim" id="q-dim"></span>
           </div>
 
-          <h2 class="q-text" id="q-text" tabindex="-1">How often do you pick up your phone without actually deciding to?</h2>
+          <h2 class="q-text" id="q-text" tabindex="-1">Loading…</h2>
 
-          <div class="options" id="options" role="group" aria-label="Answer options"><button type="button" class="option" aria-pressed="false"><span class="key" aria-hidden="true">1</span><span>Hardly ever</span></button><button type="button" class="option" aria-pressed="false"><span class="key" aria-hidden="true">2</span><span>Sometimes</span></button><button type="button" class="option" aria-pressed="false"><span class="key" aria-hidden="true">3</span><span>Most days</span></button><button type="button" class="option" aria-pressed="false"><span class="key" aria-hidden="true">4</span><span>Constantly — it just happens</span></button></div>
+          <div class="options" id="options" role="group" aria-label="Answer options"></div>
 
           <p style="font-size:.82rem;color:var(--muted);margin-top:1rem">
             Tip: press <kbd>1</kbd>–<kbd>4</kbd> to answer, or use the arrow keys.
           </p>
 
           <div class="quiz-nav">
-            <button class="btn btn-ghost" type="button" id="btn-back" disabled="">← Back</button>
-            <button class="btn btn-primary" type="button" id="btn-next" disabled="">Next →</button>
+            <button class="btn btn-ghost" type="button" id="btn-back">← Back</button>
+            <button class="btn btn-primary" type="button" id="btn-next" disabled>Next →</button>
           </div>
         </div>
 
         <!-- ---------- results, injected by quiz.js ---------- -->
-
-        
-        <div id="results" hidden="" tabindex="-1" role="region" aria-live="polite" aria-label="Your result"></div>
+        <div id="results" hidden tabindex="-1" role="region" aria-live="polite" aria-label="Your result"></div>
 
       </div>
     </div>
@@ -92,31 +90,17 @@
   </section>
 </main>
 
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="margin-top:0;border-top:0">
+      Whakatā · a student project for NCEA Level 3 Digital Technologies ·
+      <a href="learn.html#sources">Sources</a>
+    </div>
+  </div>
+</footer>
 
 <script src="js/app.js"></script>
 <script src="data/questions.js"></script>
 <script src="js/quiz.js"></script>
-
-
-</body></html>
-<!DOCTYPE html>
-<html lang="en-NZ" data-theme="dark"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Screen Habit Check — </title>
-<meta name="description" content="Ten questions, ninety seconds. Find out what your phone habits actually look like.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-
-<script src="js/app.js"></script>
-<script src="data/questions.js"></script>
-<script src="js/quiz.js"></script>
-
-
 </body>
+</html>
