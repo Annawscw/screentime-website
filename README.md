@@ -7,9 +7,9 @@ Built by Anna Watt for NCEA Level 3 Digital Technologies (AS 91907), 2026.
 ## Pages
 
 - **Home**: an introduction to the site
-- **The Check**: an interactive quiz that [what the quiz measures]
-- **My Balance**: [what this page shows]
-- **Toolkit**: [practical tips or resources]
+- **The Quiz**: an interactive quiz that [what the quiz measures]
+- **Reality check**: [what this page shows]
+- **Addiction Buster**: [practical tips or resources]
 - **The Facts**: research on [topic]
 
 ## Privacy
