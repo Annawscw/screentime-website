@@ -7,7 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;family=Rubik+Glitch&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +24,6 @@
       <a href="Addiction buster.html">Addiction buster</a>
       <a href="The facts.html" aria-current="page">The Facts</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch to light theme">☾</button>
   </div>
 </header>
 
@@ -33,8 +32,29 @@
   <section style="padding-bottom:var(--s3)">
     <div class="glow" aria-hidden="true"></div>
     <div class="wrap load-in">
-      <p class="eyebrow">The Facts</p>
-      <h1 style="font-size:clamp(2rem,5vw,3.4rem)">It's not a willpower problem.</h1>
+
+      <div class="quiz-cloud">
+
+        <h1 class="arc-eyebrow arc-facts">
+          <span class="sr-only">Facts about screen addiction!</span>
+          <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false">
+            <path id="factsArc" fill="none" d="M55,102 Q300,-37 545,76"/>
+            <text class="arc-text">
+              <textPath href="#factsArc" xlink:href="#factsArc"
+                        startOffset="50%" text-anchor="middle"
+                        >Facts&#160;about&#160;screen&#160;<tspan class="arc-hl">addiction!</tspan></textPath>
+            </text>
+          </svg>
+        </h1>
+
+        <div class="cloud-photo">
+          <img src="teens on screens2.jpeg"
+               alt="A teenager lying on the grass under a tree holding a phone above their face, with friends sitting nearby.">
+        </div>
+
+      </div>
+
+      <h2 style="font-size:clamp(2rem,5vw,3.4rem)">It's not a willpower problem.</h2>
       <p class="lede">
         You are not competing against yourself. You are competing against teams of very well-paid
         engineers whose entire job is to make sure you keep scrolling. Here's how they do it.
@@ -125,15 +145,15 @@
 
       <div class="grid grid-3">
         <div class="stat reveal">
-          <div class="stat-num" data-count="90" data-suffix="%">0%</div>
+          <div class="stat-num" data-count="90" data-suffix="%">90%</div>
           <p>of NZ teens aged 13–17 use social media. 62% started between the ages of 10 and 13.</p>
         </div>
         <div class="stat reveal">
-          <div class="stat-num" data-count="50" data-suffix="%">0%</div>
+          <div class="stat-num" data-count="50" data-suffix="%">50%</div>
           <p>say they got access <strong>too young</strong>. 39% wish social media had never been invented at all.</p>
         </div>
         <div class="stat reveal">
-          <div class="stat-num" data-count="47" data-suffix="%">0%</div>
+          <div class="stat-num" data-count="47" data-suffix="%">47%</div>
           <p>support raising the minimum age to 16 — against 25% who oppose it. 77% of caregivers support it.</p>
         </div>
       </div>
@@ -210,69 +230,17 @@
           <a href="https://www.education.govt.nz/education-professionals/schools-year-0-13/administration-and-management/phones-school">education.govt.nz</a>
         </li>
       </ol>
+        <p>All photos used were taken by Anna Watt, with condent provided by people in the photos.</p>
 
       <p style="font-size:.85rem;color:var(--muted);margin-top:2rem">
         The "96 pickups a day" figure on the home page is a widely reported international average, not an
         NZ-specific measurement — <strong>replace it with a figure you can cite, or label it clearly as an
         international estimate.</strong>
       </p>
+
     </div>
   </section>
 
 </main>
-
-<script src="js/app.js"></script>
-
- 
-  <!-- ============================== SOURCES ============================== -->
-  <section id="sources">
-    <div class="wrap">
-      <p class="eyebrow">References</p>
-      <h2>Where these numbers come from</h2>
-      <p class="lede" style="margin-bottom:1.5rem">
-        Every figure on this site is from a named source. If a wellbeing site won't tell you where its
-        statistics came from, be suspicious of it.
-      </p>
-
-      <ol class="refs">
-        <li>
-          Public Health Communication Centre Aotearoa. <em>Problematic social media use common among NZ teens
-          as government examines age limits.</em> Survey of 540 New Zealanders aged 13–17, October 2025
-          (±4.2% margin of error), plus 533 caregivers, September 2025.
-          <a href="https://www.phcc.org.nz/briefing/problematic-social-media-use-common-among-nz-teens-government-examines-age-limits">phcc.org.nz</a>
-        </li>
-        <li>
-          Education Review Office. <em>Do Not Disturb: A review of removing cell phones from New Zealand's
-          classrooms.</em>
-          <a href="https://www.evidence.ero.govt.nz/documents/do-not-disturb-a-review-of-removing-cell-phones-from-new-zealand-s-classrooms-summary">evidence.ero.govt.nz</a>
-        </li>
-        <li>
-          Netsafe. <em>Ngā taiohi matihiko o Aotearoa: New Zealand children's experiences of online risks
-          and harm.</em>
-          <a href="https://netsafe.org.nz/our-work/reports-and-research">netsafe.org.nz</a>
-        </li>
-        <li>
-          <em>New Zealand Medical Journal.</em> Impacts of digital technologies on child and adolescent health:
-          recommendations for safer screen use in educational settings. Vol 137, No 1598.
-          <a href="https://nzmj.org.nz/journal/vol-137-no-1598/impacts-of-digital-technologies-on-child-and-adolescent-health-recommendations-for-safer-screen-use-in-educational-settings">nzmj.org.nz</a>
-        </li>
-        <li>
-          Ministry of Education. <em>Phones at school.</em>
-          <a href="https://www.education.govt.nz/education-professionals/schools-year-0-13/administration-and-management/phones-school">education.govt.nz</a>
-        </li>
-      </ol>
-
-      <p style="font-size:.85rem;color:var(--muted);margin-top:2rem">
-        The "96 pickups a day" figure on the home page is a widely reported international average, not an
-        NZ-specific measurement — <strong>replace it with a figure you can cite, or label it clearly as an
-        international estimate.</strong>
-      </p>
-    </div>
-  </section>
-
-</main>
-
-
-
 
 </body></html>

@@ -7,7 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;family=Rubik+Glitch&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +24,6 @@
       <a href="Addiction buster.html" aria-current="page">Addiction buster</a>
       <a href="The facts.html">The Facts</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch to light theme">☾</button>
   </div>
 </header>
 
@@ -35,12 +34,39 @@
     <section style="padding-bottom:var(--s4)">
       <div class="glow" aria-hidden="true"></div>
       <div class="wrap load-in">
-        <p class="eyebrow">Addiction buster</p>
-        <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Things that actually work.</h1>
-        <p class="lede">
-          None of these are "use your phone less". They're specific, they take under five minutes to set up,
-          and most of them work by <strong>changing your setup rather than relying on willpower</strong> —
-          because willpower at 11:30pm is not a real thing.
+
+        <div class="quiz-cloud">
+
+          <h1 class="arc-eyebrow arc-buster">
+            <span class="sr-only">Tips to bust screen addiction!</span>
+            <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false">
+              <path id="busterArc" fill="none" d="M55,102 Q300,-37 545,76"/>
+              <text class="arc-text">
+                <textPath href="#busterArc" xlink:href="#busterArc"
+                          startOffset="50%" text-anchor="middle"
+                          >Tips&#160;to&#160;bust&#160;screen&#160;<tspan class="arc-hl">addiction!</tspan></textPath>
+              </text>
+            </svg>
+          </h1>
+
+          <div class="cloud-photo">
+            <img src="teens on screens.jpeg"
+                 alt="Two teenagers sitting outside a wharenui in the sun, both looking down at their phones.">
+          </div>
+
+        </div>
+        <h2 class="quiz-cue">
+          Tips to bust addiction
+          <svg class="quiz-cue-arrow" viewBox="0 0 24 32" aria-hidden="true" focusable="false">
+            <path d="M12 3 V25 M3 17 L12 27 L21 17" fill="none"
+                  stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </h2>
+
+        <p class="lede lede-centred">
+          Find the screen habit you actually struggle with.<br>
+          Tap the card, and it'll give you a specific solution to the screen habit you want to break!
         </p>
       </div>
     </section>
@@ -52,14 +78,14 @@
         <p class="lede" style="margin-bottom:2rem">Find the habit. Flip the card. Try the swap tonight.</p>
 
         <div class="filters" id="filters" role="group" aria-label="Filter swap cards by category">
-          <button class="filter" type="button" data-cat="all" aria-pressed="true">All 12</button>
+          <button class="filter" type="button" data-cat="all" aria-pressed="true">All 16</button>
           <button class="filter" type="button" data-cat="sleep" aria-pressed="false">Sleep</button>
           <button class="filter" type="button" data-cat="focus" aria-pressed="false">Focus</button>
           <button class="filter" type="button" data-cat="social" aria-pressed="false">Social</button>
           <button class="filter" type="button" data-cat="boredom" aria-pressed="false">Boredom</button>
         </div>
 
-        <div class="grid grid-3" id="swap-cards"><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I scroll in bed until I fall asleep</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Charge your phone across the room, or outside it. Buy a $15 alarm clock so "I need it as my alarm" stops being true. The barrier has to be physical — willpower at 11pm does not exist.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I check my phone the second I wake up</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Put a book, a glass of water or your school bag where your phone used to be. The first thing your hand finds sets the tone for the whole morning.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I say "one more video" and lose an hour</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn off autoplay (YouTube: Settings → Autoplay off). Every "one more" you have to actually choose is one you can say no to.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I cannot get started on homework</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Phone in another room — not face-down on the desk. Studies keep finding that a visible phone eats attention even when it is silent. Then use the 25-minute timer on this page.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I check my phone every few minutes while studying</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Batch it. Work 25, check for 5. Knowing a check is coming stops the itch far better than "never".</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">Notifications keep pulling me out</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn off every notification that is not a real human messaging you directly. No app, no game, no "someone you may know". Do it once and you get hours back.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I feel worse after scrolling but keep doing it</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Spend ten minutes unfollowing. Not muting — unfollowing. If an account reliably makes you feel behind, it is not neutral content, it is a cost you are paying daily.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I keep streaks going out of obligation</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Streaks are a design trick, not a friendship. Tell the person you are dropping it. If the friendship is real it survives; if it is not, you just got your evenings back.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I am on my phone when I am with people</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Phone-stack: everyone puts their phone in the middle of the table, first to grab it buys the chips. Works because it is a game, not a rule.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I go on my phone the moment I am bored</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Sit in the boredom for two minutes first. It is deeply uncomfortable and then it passes, and something else turns up. This is the single hardest and most useful thing on this page.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I open apps without deciding to</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Move your three worst apps off the home screen into a folder on the last page. Your thumb has muscle memory — break the map and you break the reflex.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">Removing apps just leaves an empty hole</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Decide in advance what fills the gap. An empty hour gets filled by the phone by default. A planned hour does not. Have the book, the ball or the mate lined up first.</span><span class="flip-hint">← Tap to flip back</span></span></span></button></div>
+        <div class="grid grid-3" id="swap-cards"><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I scroll in bed until I fall asleep</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Charge your phone across the room, or outside it. Buy a $15 alarm clock so "I need it as my alarm" stops being true. The barrier has to be physical — willpower at 11pm does not exist.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I check my phone the second I wake up</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Put a book, a glass of water or your school bag where your phone used to be. The first thing your hand finds sets the tone for the whole morning.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I say "one more video" and lose an hour</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn off autoplay (YouTube: Settings → Autoplay off). Every "one more" you have to actually choose is one you can say no to.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">sleep</span><span class="swap-title">I wake up in the night and check my phone</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Use a real clock, not the phone, to check the time at 3am. Unlocking it to see "4:12" hands you notifications you cannot un-see, and that is the hour you lose.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I cannot get started on homework</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Phone in another room — not face-down on the desk. Studies keep finding that a visible phone eats attention even when it is silent. Then use the 25-minute timer on this page.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I check my phone every few minutes while studying</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Batch it. Work 25, check for 5. Knowing a check is coming stops the itch far better than "never".</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">Notifications keep pulling me out</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn off every notification that is not a real human messaging you directly. No app, no game, no "someone you may know". Do it once and you get hours back.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">focus</span><span class="swap-title">I only meant to look one thing up</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Write the thing on paper and look it up in your five-minute break. Most of the time you no longer care by then — and you never opened the app that was going to take the next twenty minutes.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I feel worse after scrolling but keep doing it</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Spend ten minutes unfollowing. Not muting — unfollowing. If an account reliably makes you feel behind, it is not neutral content, it is a cost you are paying daily.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I keep streaks going out of obligation</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Streaks are a design trick, not a friendship. Tell the person you are dropping it. If the friendship is real it survives; if it is not, you just got your evenings back.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I am on my phone when I am with people</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Phone-stack: everyone puts their phone in the middle of the table, first to grab it buys the chips. Works because it is a game, not a rule.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">social</span><span class="swap-title">I keep checking whether they have seen it</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Turn read receipts off, both ways. Waiting for a reply is not a task, it only feels like one because the app keeps giving you something to check.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I go on my phone the moment I am bored</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Sit in the boredom for two minutes first. It is deeply uncomfortable and then it passes, and something else turns up. This is the single hardest and most useful thing on this page.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I open apps without deciding to</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Move your three worst apps off the home screen into a folder on the last page. Your thumb has muscle memory — break the map and you break the reflex.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">Removing apps just leaves an empty hole</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Decide in advance what fills the gap. An empty hour gets filled by the phone by default. A planned hour does not. Have the book, the ball or the mate lined up first.</span><span class="flip-hint">← Tap to flip back</span></span></span></button><button class="flip" type="button" aria-pressed="false"><span class="flip-inner"><span class="flip-face"><span><span class="chip">boredom</span><span class="swap-title">I watch things I do not even like</span></span><span class="flip-hint">Tap for the swap →</span></span><span class="flip-face flip-back"><span class="swap-body">Ask out loud: would I have picked this? Autoplay fills the gap after the one thing you did choose. Shutting the app at the end of that video is a decision you only have to make once.</span><span class="flip-hint">← Tap to flip back</span></span></span></button></div>
       </div>
     </section>
 
@@ -69,11 +95,13 @@
         <div class="grid grid-2" style="align-items:center">
           <div>
             <p class="eyebrow">Focus timer</p>
-            <h2>25 on, 5 off.</h2>
-            <p style="color:var(--muted)">
-              Put your phone in another room — not face-down on the desk, actually out of the room.
-              Work for 25 minutes, then take 5. Knowing a break is coming is what stops the itch;
-              "never check it" has never worked for anyone.
+            <h2>Focus on anything other than your devices.</h2>
+
+              Put your device in another room. </p>
+
+             <p> Work on doing something physical for 25 minutes.</p>
+
+             <p> Sewing, walking, sketching/doodling, cooking, reading, cleaning, simple craft, calling a freind and many more hobbies to choose from.
             </p>
             <div class="btn-row" style="margin-top:1.5rem">
               <button class="btn btn-primary" type="button" id="btn-timer-start">▶ Start</button>
@@ -106,14 +134,14 @@
 
         <div class="grid grid-2" style="align-items:start">
           <div id="challenge"><button class="day-row" type="button" aria-pressed="false" data-i="0"><span class="day-box" aria-hidden="true"></span><span><strong>Day 1 — First 30 minutes</strong><span>No phone for the first 30 minutes after you wake up. Just today.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="1"><span class="day-box" aria-hidden="true"></span><span><strong>Day 2 — Kill the noise</strong><span>Turn off every notification that is not a person messaging you directly.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="2"><span class="day-box" aria-hidden="true"></span><span><strong>Day 3 — Move the charger</strong><span>Charge your phone outside your bedroom tonight. This is the big one.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="3"><span class="day-box" aria-hidden="true"></span><span><strong>Day 4 — One meal, no phone</strong><span>Eat one meal today with your phone in another room. Notice how long it feels.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="4"><span class="day-box" aria-hidden="true"></span><span><strong>Day 5 — Rearrange</strong><span>Move your three most-used apps off the home screen into a folder on the last page.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="5"><span class="day-box" aria-hidden="true"></span><span><strong>Day 6 — Two hours out</strong><span>Two hours away from home with your phone left behind, or on aeroplane mode.</span></span></button><button class="day-row" type="button" aria-pressed="false" data-i="6"><span class="day-box" aria-hidden="true"></span><span><strong>Day 7 — Check the number</strong><span>Look at your real screen time for the week in your phone settings. Log it. No judgement — just look.</span></span></button></div>
-          <div class="card card-hard">
+          <div class="card card-hard card-why">
             <h3>Why this works</h3>
-            <p style="color:var(--muted)">
+            <p class="why-body">
               Big resolutions fail because they need you to be a different person by Monday.
               Each of these takes under ten minutes and changes one part of your environment.
               Environment beats intention — every time.
             </p>
-            <p id="challenge-note" style="margin:0;color:var(--muted)">0 of 7 done. They do not have to be on consecutive days.</p>
+            <p id="challenge-note">0 of 7 done. They do not have to be on consecutive days.</p>
           </div>
         </div>
       </div>
@@ -152,10 +180,7 @@
   </div>
 </main>
 
-
 <script src="js/app.js"></script>
-<script src="data/Addiction buster.js"></script>
-<script src="js/Addiction buster.js"></script>
-
+<script src="js/toolkit.js"></script>
 
 </body></html>

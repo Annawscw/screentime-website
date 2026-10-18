@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,700&family=Rubik+Glitch&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,12 +26,11 @@
       <a href="Addiction buster.html">Addiction buster</a>
       <a href="The facts.html">The Facts</a>
     </nav>
-    
+
   </div>
 </header>
 
 <main id="main">
-
 
   <!-- ============================== HERO ============================== -->
   <section class="hero">
@@ -39,55 +38,59 @@
     <div class="wrap">
       <div class="hero-inner load-in">
         <div>
-          <p class="eyebrow">------ · to pause, to rest</p>
-          <h1>Teen screen <span class="hl">addiction</span></h1>
-          <h2>and how to handle it!</h2>
+
+          <div class="cloud-stack">
+          <h1 class="arc-title">
+            <span class="sr-only">Teen screen addiction</span>
+            <svg viewBox="0 0 800 400" aria-hidden="true" focusable="false">
+              <path id="titleArc" fill="none" d="M24,143 Q399,-21 774,124"/>
+              <text class="arc-text">
+                <textPath href="#titleArc" xlink:href="#titleArc"
+                          startOffset="50%" text-anchor="middle"
+                          >Teen&#160;screen&#160;<tspan class="arc-hl">addiction</tspan></textPath>
+              </text>
+            </svg>
+          </h1>
+
+          <div class="slideshow">
+          <img src="Kidsonphone1.jpeg" alt="Teenager in bed looking at phone while on computer.">
+          <img src="Kidsonphone2.jpeg" alt="two teenagers, one sitting outsidewhile on their devices.">
+          <img src="Kidsonphone4.jpeg" alt="three teenagers looking at a computer.">
+          <img src="Kidsonphone5.jpeg" alt="Bird eye veiw over looking teenager lying down in bed surrounded by devices.">
+          <img src="Kidsonphone7.jpeg" alt="Teenager in bed surrounded by lots of devices.">
+          <img src="Kidsonphone8.jpeg" alt="Four teenagers in nature but are all looking at their phones.">
+          <img src="Kidsonphone9.jpeg" alt="Three teenagers looking at their phones and computers.">
+          <div class="slideshow-dots" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          </div>
+          </div>
+
+          <h2 class="hero-sub">and how to handle it<svg class="hero-arrow" viewBox="0 0 24 32" aria-hidden="true" focusable="false"><path d="M12 4 V24 M4 16 L12 27 L20 16" fill="none" stroke="currentColor" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></h2>
+
           <p class="lede" style="margin-top:1.5rem">
             This isn't a lecture - it's a two-minute check
-            that shows you what your own habits actually look like, and a few
-            things you can change tonight.
+            that shows you what your screen habits look like, and a few
+            things you can change tonight to be less addicted to your devices.
           </p>
           <div class="btn-row" style="margin-top:2rem">
             <a class="btn btn-primary" href="The Quiz.html">Take the 2-minute check →</a>
             <a class="btn btn-ghost" href="The facts.html">Just show me the facts</a>
           </div>
-          <p style="margin-top:1.5rem;font-size:.88rem;color:var(--muted)">
+          <p style="margin-top:1.5rem;font-size:1.02rem;color:var(--muted)">
             No sign-up. No account. Nothing is sent anywhere.
           </p>
         </div>
 
-        <div>
-
-  <div>
-    <div>
-  <div class="slideshow">
-    <img src="Kidsonphone1.jpeg" alt="Teenager in bed looking at phone while on computer.">
-    <img src="Kidsonphone2.jpeg" alt="two teenagers, one sitting outsidewhile on their devices.">
-    <img src="Kidsonphone3.jpeg" alt="close up of two teenagers on their phones.">
-    <img src="Kidsonphone4.jpeg" alt="three teenagers looking at a computer.">
-    <img src="Kidsonphone5.jpeg" alt="Bird eye veiw over looking teenager lying down in bed surrounded by devices.">
-    <img src="Kidsonphone6.jpeg" alt="Teenager lying in bed looking at computer.">
-    <img src="Kidsonphone7.jpeg" alt="Teenager in bed surrounded by lots of devices.">
-    <img src="Kidsonphone8.jpeg" alt="Four teenagers in nature but are all looking at their phones.">
-    <img src="Kidsonphone9.jpeg" alt="Three teenagers looking at their phones and computers.">
-     <div class="slideshow-dots" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-</div>
-    </div>
-  </div>
-</div>
-        </div>
       </div>
     </div>
   </section>
 
-
-
   <!-- ============================== STATS ============================= -->
-  
+
   <section>
     <div class="wrap">
-      
+
       <h2 class="reveal" style="margin-bottom:2.5rem">It isn't just you.</h2>
 
       <div class="grid grid-3">
@@ -112,11 +115,11 @@
   <section>
     <div class="wrap">
       <p class="eyebrow reveal">How this site works</p>
-      <h2 class="reveal" style="margin-bottom:3rem">Three steps of about ten minutes total.</h2>
+      <h2 class="reveal" style="margin-bottom:3rem">Three steps to handle your screen use better.</h2>
 
       <div class="grid grid-3 steps">
         <a href="The Quiz.html" class="card card-hard step reveal" style="text-decoration:none;color:inherit">
-         
+
           <h3 style="color:var(--amber)">Recognise your addiction</h3>
           <p style="color:var(--muted)">Take the quiz - ten questions over ninety seconds. You get a score, a profile, and a breakdown showing
             <em>which</em> part of your phone use is the problem, because for most people it's one thing.</p>
@@ -124,19 +127,19 @@
         </a>
 
         <a href="Reality Check.html" class="card card-hard step reveal" style="text-decoration:none;color:inherit">
-         
+
           <h3 style="color:var(--coral)">Manage your addiction</h3>
           <p style="color:var(--muted)">Log your real screen hours each day, set a goal you'd actually hit, and check your chart.
             Almost everyone guesses about half their real number of hours, and seeing it is the hard bit.</p>
-          <span class="flip-hint">Open my dashboard </span>
+          <span class="flip-hint">Reality check</span>
         </a>
 
         <a href="Addiction buster.html" class="card card-hard step reveal" style="text-decoration:none;color:inherit">
-         
+
           <h3 style="color:var(--mint)">Reduce your addiction</h3>
           <p style="color:var(--muted)">Twelve changes to your behaviour, a focus timer, a seven day challenge and a wind-down plan.
             These steps are small and concrete, and nothing tells you to delete anything.</p>
-          <span class="flip-hint">Open the toolkit </span>
+          <span class="flip-hint">Addiction buster</span>
         </a>
       </div>
     </div>
@@ -159,11 +162,11 @@
   <section style="text-align:center">
     <div class="wrap">
       <h2 class="reveal">Ready?</h2>
-      <p class="reveal" style="margin-inline:auto;color:var(--muted)">
+      <p class="reveal lede lede-centred">
         Ten questions. No email. No result gets sent anywhere.
       </p>
       <div class="btn-row reveal" style="justify-content:center;margin-top:1.5rem">
-        <a class="btn btn-primary" href="The Quiz.html">Start the quiz </a> 
+        <a class="btn btn-primary" href="The Quiz.html">Start the quiz </a>
 
       </div>
     </div>
@@ -171,14 +174,13 @@
 
 </main>
 
-
 </body></html>
     </head>
     <body>
 
         <script src="" async defer></script>
-    </body>
+<script src="js/app.js"></script>
 
-
+</body>
 
 </html>

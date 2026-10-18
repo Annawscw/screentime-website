@@ -7,7 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,700&amp;family=Rubik+Glitch&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +24,6 @@
       <a href="Addiction buster.html">Addiction buster</a>
       <a href="The facts.html">The Facts</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch to light theme">☾</button>
   </div>
 </header>
 
@@ -33,16 +32,37 @@
     <div class="glow" aria-hidden="true"></div>
     <div class="wrap">
 
-      <p class="eyebrow">My reality checker</p>
-      <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Your week, in actual numbers.</h1>
-      <p class="lede" id="greeting" aria-live="polite">Kia ora. Your last check put you at <strong>Drifting</strong> — 12 out of 30 <span class="chip" style="margin-left:.5rem">2026-08-12</span></p>
+      <div class="quiz-cloud">
+
+        <h1 class="arc-eyebrow arc-goals">
+          <span class="sr-only">Make your own screen use goals!</span>
+          <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false">
+            <path id="goalsArc" fill="none" d="M55,102 Q300,-37 545,76"/>
+            <text class="arc-text">
+              <textPath href="#goalsArc" xlink:href="#goalsArc"
+                        startOffset="50%" text-anchor="middle"
+                        >Make&#160;your&#160;own&#160;screen&#160;use&#160;<tspan class="arc-hl">goals!</tspan></textPath>
+            </text>
+          </svg>
+        </h1>
+
+        <div class="cloud-photo">
+          <img src="teens with screen3.jpeg"
+               alt="Two teenagers sitting against a wall outside a wharenui, both looking at their phones.">
+        </div>
+
+      </div>
+      <p class="lede" id="greeting" aria-live="polite">Kia ora. Check how far away you are from your goal of less screen time!
+        <span id="greeting-result">Your last check put you at <strong id="greet-profile"></strong> — <span id="greet-score"></span></span>
+        <span id="greeting-none" hidden>You haven't taken the check yet — <a href="The Quiz.html">take it here</a>.</span>
+      </p>
 
       <!-- ---------- log + chart ---------- -->
       <div class="dash-grid" style="margin-top:3rem">
 
         <div class="card card-hard">
           <h3>Last 14 days</h3>
-          <p style="color:var(--muted);font-size:.94rem">
+          <p style="color:var(--muted);font-size:1.50rem">
             Green is under your goal, coral is over. Faint stubs are days you didn't log —
             which is not the same as a zero.
           </p>
@@ -53,7 +73,7 @@
 
           <div class="card">
             <h3 style="margin-bottom:.5rem">Log today</h3>
-            <p style="color:var(--muted);font-size:.9rem;margin-bottom:1rem">
+            <p style="color:var(--muted);font-size:1.2rem;margin-bottom:1rem">
               Check your real number in <strong>Settings → Screen Time</strong> (iPhone) or
               <strong>Digital Wellbeing</strong> (Android). Guessing is always low.
             </p>
@@ -66,11 +86,14 @@
             <button class="btn btn-primary" type="button" id="btn-log" style="width:100%;margin-top:1rem">Log today</button>
           </div>
 
-          <div class="card">
+          <div class="card card-goal">
             <h3 style="margin-bottom:.5rem">My daily goal</h3>
-            <label class="sr-only" for="goal-input">Daily screen time goal in hours</label>
-            <input type="number" id="goal-input" min="0.5" max="12" step="0.5" value="3" style="width:100%">
-            <p style="color:var(--muted);font-size:.86rem;margin:.7rem 0 0">
+            <label class="goal-label" for="goal-input">How many hours a day are you aiming for?</label>
+            <div class="goal-field">
+              <input type="number" id="goal-input" min="0.5" max="12" step="0.5" value="3">
+              <span class="goal-unit" aria-hidden="true">hours a day</span>
+            </div>
+            <p style="color:var(--muted);font-size:1.5rem;margin:.7rem 0 0">
               Pick something you'd actually hit. Cutting 6h to 2h fails; 6h to 5h sticks.
             </p>
           </div>
@@ -84,7 +107,7 @@
         <div class="card">
           <p class="eyebrow" style="margin-bottom:.5rem">7-day average</p>
           <div class="big-value" id="avg-value">3.0h</div>
-          <p class="value-sub" id="avg-note" style="margin-top:.6rem">You are <strong style="color:var(--mint)">0.0h under</strong> your goal. Solid.<br><span style="font-size:.85rem">The NZ average for 13–17 year olds on social media alone is about 2.5h a day.</span></p>
+          <p class="value-sub" id="avg-note" style="margin-top:.6rem">You are <strong style="color:var(--mint)">0.0h under</strong> your goal. Solid.<br><span>The NZ average for 13–17 year olds on social media alone is about 2.5h a day.</span></p>
         </div>
 
         <div class="card">
@@ -95,7 +118,7 @@
 
         <div class="card" style="border-color:var(--amber)">
           <p class="eyebrow" style="margin-bottom:.5rem">What that costs</p>
-          <p id="cost-text" style="margin:0;font-size:.98rem;color:var(--muted)">That is <strong>3.0 hours</strong> this week — about <strong>4 episodes</strong>, or <strong>0.5 books</strong>, or <strong>6 half-hour runs</strong>. Over a year that is roughly <strong>7 full days</strong> of your life. (Right now: 0.1 days of this week.)</p>
+          <p id="cost-text" style="margin:0;font-size:1.5rem;color:var(--muted)">That is <strong>3.0 hours</strong> this week — about <strong>4 episodes</strong>, or <strong>0.5 books</strong>, or <strong>6 half-hour runs</strong>. Over a year that is roughly <strong>7 full days</strong> of your life. (Right now: 0.1 days of this week.)</p>
         </div>
 
       </div>
@@ -103,7 +126,7 @@
       <!-- ---------- data controls ---------- -->
       <div class="card" style="margin-top:var(--s4)">
         <h3>Your data</h3>
-        <p style="color:var(--muted);font-size:.94rem">
+        <p style="color:var(--muted);font-size:1.5rem">
           All of this lives in your browser on this device only. It has never been sent anywhere.
           You can take a copy or wipe it completely, right now, with no confirmation email and no account to close.
         </p>

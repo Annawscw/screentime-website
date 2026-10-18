@@ -1,19 +1,5 @@
 /* ==========================================================================
    questions.js — the CONTENT of the Screen Habit Check.
-
-   This file holds data only. No logic lives here.
-   To add or reword a question you edit this array and nothing else.
-   (Separating content from logic is a deliberate architecture decision —
-   write about it in your report.)
-
-   Each question has:
-     dim   — which dimension of problematic use it measures
-     text  — the question shown to the user
-     opts  — exactly 4 options, in order, worth 0 / 1 / 2 / 3 points
-
-   The four dimensions come from how problematic screen use is normally
-   described in research: loss of control, displacement of other activities,
-   mood/withdrawal, and conflict with other people.
    ========================================================================== */
 
 var DIMENSIONS = {
@@ -78,9 +64,6 @@ var QUESTIONS = [
 
 /* --------------------------------------------------------------------------
    PROFILES — the four score bands.
-   min/max are INCLUSIVE. Total possible score is 10 questions × 3 = 30.
-   Boundary values (7/8, 14/15, 21/22) are deliberately chosen so you can
-   boundary-test them — see the testing plan.
    -------------------------------------------------------------------------- */
 
 var PROFILES = [

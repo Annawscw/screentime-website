@@ -1,4 +1,6 @@
-<html lang="en-NZ" data-theme="dark"><head>
+<!DOCTYPE html>
+<html lang="en-NZ" data-theme="dark">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Screen Habit Check </title>
@@ -6,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,700&family=Rubik+Glitch&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-dot"></span>_--</a>
+    <a class="brand" href="index.html"><span class="brand-dot"></span>___</a>
     <nav class="nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="The Quiz.html" aria-current="page">The Quiz</a>
@@ -23,7 +25,6 @@
       <a href="Addiction buster.html">Addiction buster</a>
       <a href="The facts.html">The Facts</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch to light thheme">☾</button>
   </div>
 </header>
 
@@ -32,12 +33,37 @@
     <div class="glow" aria-hidden="true"></div>
     <div class="wrap">
       <div class="quiz-shell load-in">
-        <p class="eyebrow">The Screen Habit Check</p>
-        <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Ten questions.<br>Answer honestly — no one else sees this.</h1>
-        <p class="lede">
-          There are no right answers and nothing gets sent anywhere. The point isn't the total;
-          it's finding out <em>which</em> habit is costing you the most.
-        </p>
+
+        <div class="quiz-cloud">
+
+          <p class="arc-eyebrow">
+            <span class="sr-only">The Screen Habit Check</span>
+            <svg viewBox="0 0 600 400" aria-hidden="true" focusable="false">
+
+              <path id="quizArc" fill="none" d="M55,102 Q300,-37 545,76"/>
+              <text class="arc-text">
+                <textPath href="#quizArc" xlink:href="#quizArc"
+                          startOffset="50%" text-anchor="middle"
+                          >The&#160;screen&#160;habit&#160;<tspan class="arc-hl">check</tspan></textPath>
+              </text>
+            </svg>
+          </p>
+
+          <h1 class="cloud-photo">
+            <img src="quiz-cloud.jpg"
+                 alt="Take the screen addiction quiz. There are no right answers and no one else sees this. Find out which habit is costing you the most.">
+          </h1>
+
+        </div>
+
+        <h2 class="quiz-cue">
+          Start the quiz
+          <svg class="quiz-cue-arrow" viewBox="0 0 24 32" aria-hidden="true" focusable="false">
+            <path d="M12 3 V25 M3 17 L12 27 L21 17" fill="none"
+                  stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </h2>
       </div>
     </div>
   </section>
@@ -53,16 +79,11 @@
           </div>
           <div class="progress-meta">
             <span id="q-count">Question 1 of 10</span>
-            <span class="q-dim" id="q-dim"></span>
           </div>
 
           <h2 class="q-text" id="q-text" tabindex="-1">Loading…</h2>
 
           <div class="options" id="options" role="group" aria-label="Answer options"></div>
-
-          <p style="font-size:.82rem;color:var(--muted);margin-top:1rem">
-            Tip: press <kbd>1</kbd>–<kbd>4</kbd> to answer, or use the arrow keys.
-          </p>
 
           <div class="quiz-nav">
             <button class="btn btn-ghost" type="button" id="btn-back">← Back</button>
@@ -80,7 +101,7 @@
   <section style="padding-top:0">
     <div class="wrap">
       <div class="quiz-shell">
-        <p style="font-size:.85rem;color:var(--muted)">
+        <p style="font-size:1 rem ;color:var(--muted)">
           This check is a self-reflection tool built for a school project. It is not a clinical
           screening test and it does not diagnose anything. If you're worried about how you're
           feeling, talk to someone — Youthline 0800 376 633, or free text 234.
@@ -90,17 +111,8 @@
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-bottom" style="margin-top:0;border-top:0">
-      Whakatā · a student project for NCEA Level 3 Digital Technologies ·
-      <a href="learn.html#sources">Sources</a>
-    </div>
-  </div>
-</footer>
-
 <script src="js/app.js"></script>
-<script src="data/questions.js"></script>
+<script src="js/questions.js"></script>
 <script src="js/quiz.js"></script>
 </body>
 </html>
