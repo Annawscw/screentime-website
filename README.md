@@ -73,4 +73,4 @@ Once GitHub Pages is turned on for the `main` branch, the live site will be at <
 
 The statistics on the home page and The Facts page come from New Zealand research — the Public Health Communication Centre, the Education Review Office, Netsafe and the New Zealand Medical Journal. Every figure is linked to its source in the "Where these numbers come from" section of The Facts.
 
-Photographs: [who took them / where they came from].
+All photographs on the site were taken by Anna Watt, and everyone who appears in them gave their permission to be photographed and for the images to be used here.
